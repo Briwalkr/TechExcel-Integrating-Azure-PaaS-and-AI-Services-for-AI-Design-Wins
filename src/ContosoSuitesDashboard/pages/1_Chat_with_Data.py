@@ -11,6 +11,7 @@ def create_chat_completion(messages):
     aoai_key = st.secrets["aoai"]["key"]
     aoai_deployment_name = st.secrets["aoai"]["deployment_name"]
 
+    
     client = openai.AzureOpenAI(
         api_key=aoai_key,
         api_version="2024-06-01",
